@@ -25,14 +25,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-Button startNormal=(Button) findViewById(R.id.start_diag_activity);
-startNormal.setOnClickListener(new View.OnClickListener(){
-@Override
-public void onClick(View v){
-Intent intent=new Intent (MainActivity.this,NormalActivity.class);
-startNormal(intent);
-}
-});
+
         initView();
     }
 
