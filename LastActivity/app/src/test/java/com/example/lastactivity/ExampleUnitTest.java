@@ -18,4 +18,15 @@ public class ExampleUnitTest {
         Toast.makeText(getContext(), "2233", Toast.LENGTH_SHORT).show();
         Button button =(Button) findViewById(R.id.button);
     }
+
+    @Override
+    public View getView(int position, View convertView, ViewGroup parent) {
+        Fruit fruit=getItem(position);
+        View view= LayoutInflater.from(getContext()).inflate(resourceId,parent,false);
+        ImageView fruitImage=(ImageView) view.findViewById(R.id.fruit_image);
+        TextView fruitName=(TextView) view.findViewById(R.id.fruit_name);
+        fruitImage.setImageResource(fruit.getImageId());
+        fruitName.setText(fruit.getName());
+        return view;
+    }
 }
