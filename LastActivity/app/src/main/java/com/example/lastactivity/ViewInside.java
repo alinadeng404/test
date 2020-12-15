@@ -29,7 +29,12 @@ public class ViewInside extends View {
         super(context);
         init();
     }
+    public void useAppContext() {
+        // Context of the app under test.
+        Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
+        assertEquals("com.example.r7", appContext.getPackageName());
+    }
     public ViewInside(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
 
