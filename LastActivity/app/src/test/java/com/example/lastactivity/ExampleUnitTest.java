@@ -16,6 +16,6 @@ public class ExampleUnitTest {
     public void addition_isCorrect() {
         assertEquals(4, 2 + 2);
         Toast.makeText(getContext(), "2233", Toast.LENGTH_SHORT).show();
-	onclicklistener
+        Button button =(Button) findViewById(R.id.button);
     }
 }
