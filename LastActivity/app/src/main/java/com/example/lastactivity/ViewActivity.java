@@ -35,7 +35,13 @@ public class ViewActivity extends View{
         super(context, attrs);
         init();
     }
-
+public class FruitAdapter extends ArrayAdapter<Fruit>{
+    private int resourceId;
+    public FruitAdapter(Context context, int textViewResourceId, List<Fruit> objects){
+        super(context,textViewResourceId,objects);
+        resourceId=textViewResourceId;
+    }
+}
     private void init(){
         mPaint = new Paint();
         mPaint.setColor(Color.BLUE);
