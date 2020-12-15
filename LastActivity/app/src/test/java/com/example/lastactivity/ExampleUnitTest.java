@@ -16,6 +16,7 @@ public class ExampleUnitTest {
     public void addition_isCorrect() {
         assertEquals(4, 2 + 2);
         Toast.makeText(getContext(), "2233", Toast.LENGTH_SHORT).show();
+<<<<<<< HEAD
         Button button =(Button) findViewById(R.id.button);
     }
 
@@ -28,5 +29,8 @@ public class ExampleUnitTest {
         fruitImage.setImageResource(fruit.getImageId());
         fruitName.setText(fruit.getName());
         return view;
+=======
+        Intent intent=new (ExampleUnitTest.this,ViewActivity.class);
+>>>>>>> 1fa5444033439d2fe2422bcfbc78e2d68d2f3be2
     }
 }
