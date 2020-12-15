@@ -29,7 +29,13 @@ public class ViewInside extends View {
         super(context);
         init();
     }
-
+public class FruitAdapter extends ArrayAdapter<Fruit>{
+    private int resourceId;
+    public FruitAdapter(Context context, int textViewResourceId, List<Fruit> objects){
+        super(context,textViewResourceId,objects);
+        resourceId=textViewResourceId;
+    }
+}
     public ViewInside(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
 
